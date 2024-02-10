@@ -4,7 +4,7 @@ import allure
 
 @allure.step('Open main link')
 def open_main_page():
-    browser.open('https://github.com')
+    browser.open('/')
 
 
 @allure.step('Find repository {repo}')

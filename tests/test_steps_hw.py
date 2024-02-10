@@ -12,10 +12,8 @@ from helpers.actions import open_issue_tab, open_main_page, go_to_repository, se
 @allure.story('Find Issue for HW qa.guru')
 @allure.link('https://github.com', name='Testing')
 def test_dynamic_steps():
-    browser.config.window_width = 1080
-    browser.config.window_height = 720
     with allure.step('Open main link'):
-        browser.open('https://github.com')
+        browser.open('/')
     with allure.step('Find repository'):
         browser.element('[data-target="qbsearch-input.inputButton"]').click()
         browser.element("#query-builder-test").type("eroshenkoam/allure-example")

@@ -2,9 +2,7 @@ from selene import browser, by, be
 
 
 def test_github():
-    browser.config.window_width = 1080
-    browser.config.window_height = 720
-    browser.open('https://github.com')
+    browser.open('/')
 
     browser.element('[data-target="qbsearch-input.inputButton"]').click()
     browser.element("#query-builder-test").type("eroshenkoam/allure-example")
